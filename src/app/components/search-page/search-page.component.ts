@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-page.component.css']
 })
 export class SearchPageComponent implements OnInit {
-
+  public stringSearched = false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  getResult() {
+    this.stringSearched = true;
+  }
 }
