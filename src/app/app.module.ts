@@ -7,6 +7,8 @@ import { SearchPageComponent } from './components/search-page/search-page.compon
 import { WavesModule, InputsModule, ButtonsModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
     WavesModule,
     InputsModule,
     ButtonsModule,
-    FormsModule
+    FormsModule,
+    AutoCompleteModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

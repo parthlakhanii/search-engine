@@ -1,6 +1,8 @@
 <div id="cover" [ngStyle]="{'top':stringSearched === true ? '12%' : '50%' }">
     <div class="tb">
-        <div class="td"><input type="text" placeholder="Search" required></div>
+        <p-autoComplete placeholder="Search" required [(ngModel)]="text" [suggestions]="results"
+            (completeMethod)="search($event)"></p-autoComplete>
+        <!-- <input type="text" placeholder="Search" required></div> -->
         <div class="td" id="s-cover">
             <button type="button" (click)="getResult()">
                 <div id="s-circle"></div>
@@ -8,7 +10,3 @@
             </button>
         </div>
     </div>
-</div>
-<div *ngIf="stringSearched">
-   
-</div>
